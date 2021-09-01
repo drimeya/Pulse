@@ -30,6 +30,9 @@
             line-height: 18px;
             text-decoration: none;
             margin-bottom: 5px;
+            &:hover {
+                color: $red;
+            }
         }
         
     }

@@ -49,6 +49,9 @@
     margin-top: 8px;
         &-link {
             color: #FFF;
+            &:hover {
+                color: $red;
+            }
         }
     }
 }

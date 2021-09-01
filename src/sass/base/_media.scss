@@ -24,10 +24,10 @@
 @media screen and (max-width: 575px) {
     .header {
         &__logo {
-            width: 170px;
+            width: 160px;
         }
         a {
-            font-size: 14px;
+            font-size: 13px;
             line-height: 15px;
         }
         .button {
@@ -55,14 +55,15 @@
             margin-top: 20px;
         }
         &__icon {
-            width: 100px;
+            width: 95px;
             &-text {
-                font-size: 13px;
+                font-size: 12px;
             }
         }
     }
     .button_promo {
         margin-top: 20px;
+        width: 250px;
     }
     .advantages {
         padding: 40px 0;
@@ -83,5 +84,19 @@
                 }
             }
         }
+    }
+    .consulting {
+        padding: 40px 0;
+        &__descr {
+            font-size: 18px;
+        }
+    }
+    .title_consult {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .form {
+        width: 90vw;
     }
 }
