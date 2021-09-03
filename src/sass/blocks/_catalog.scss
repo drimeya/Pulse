@@ -1,0 +1,107 @@
+.catalog {
+    padding-bottom: 80px;
+    .title {
+        font-weight: 500;
+        margin-bottom: 46px;
+    }
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 0 0;
+        padding: 0 0;
+    }
+    &__tab {
+        list-style-type: none;
+        text-transform: uppercase;
+        font-weight:500;
+        font-size: 18px;
+        line-height: 50px;
+        text-align: center;
+        color: #6B6B6B;
+        width: 222px;
+        height: 52px;
+        border: 2px solid #D0D0D0;
+        transform: skewX(-25deg);
+        transition: 0.3s all;
+        cursor: pointer;
+        div {
+            transform: skewX(25deg);
+        }
+        &_active {
+            color: #FFF;
+            background-color: $red;
+            border: none;
+        }
+        &:hover {
+            box-shadow: 3px 3px 15px $red;
+            border: none;
+        }
+    }
+    &__cards {
+        margin-top: 57px;
+    }
+    &__card {
+        width: 303px;
+        height: 442px;
+        border: 2px solid #E8E8E8;
+        padding: 20px;
+    }
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: 200px;
+        margin: 0 auto;
+    }
+    &__subheader {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 15px;
+        color: $black;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: $black;
+        margin-top: 15px;
+    }
+    &__link {
+        display: block;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: $red;
+        cursor: pointer;
+        &:hover {
+            color: $red;
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__old-price {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        text-decoration-line: line-through;
+        color: #555555;
+    }
+    hr {
+        background: #555555;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: $black;
+    }
+}   
