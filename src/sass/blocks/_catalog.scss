@@ -40,12 +40,12 @@
     }
     &__cards {
         margin-top: 57px;
-    }
-    &__card {
-        width: 303px;
-        height: 442px;
-        border: 2px solid #E8E8E8;
-        padding: 20px;
+        display: none;
+        flex-flow: wrap;
+        gap: 17px;
+        &_active {
+            display: flex;
+        }
     }
     &__img {
         display: block;
@@ -97,6 +97,7 @@
     }
     hr {
         background: #555555;
+        margin: 16px 0;
     }
     &__price {
         font-weight: 700;
@@ -104,4 +105,54 @@
         line-height: 20px;
         color: $black;
     }
-}   
+    &__card {
+        overflow: hidden;
+        width: 300px;
+        height: 442px;
+        border: 2px solid #E8E8E8;
+        padding: 20px;
+        &_front, .catalog__card_back {
+            width: 100%;
+            flex-shrink: 0;
+        }
+        &_back {
+            display: flex;
+            flex-direction: column;
+            padding-left: 12px;
+            ul {
+                margin-bottom: 0;
+                padding-left: 0;
+            }
+            .catalog__link {
+                margin-top: auto;
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        gap: 40px;
+        transition: 0.5s all;
+        &_active {
+            transform: translateX(-100%)translateX(-40px);
+        }
+    }
+    &__back-descr {
+        position: relative;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #555555;
+        list-style: none;
+        margin-bottom: 5px;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: -12px;
+            width: 4px;
+            height: 4px;
+            background-color: $red;
+        }
+    }
+}

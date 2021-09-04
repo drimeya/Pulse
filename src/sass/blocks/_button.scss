@@ -29,4 +29,10 @@
         font-size: 14px;
         line-height: 22px;
     }
+    &__fitness {
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
 }
