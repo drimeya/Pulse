@@ -12,12 +12,30 @@ $(document).ready(function(){
           .closest('div.container').find('div.catalog__cards').removeClass('catalog__cards_active').eq($(this).index()).addClass('catalog__cards_active');
     });
     
-    $('.catalog__link').each(function(i) {
-        $(this).on('click', function(e) {
-            $('.catalog__content').eq(i).toggleClass('catalog__content_active');
-        })
-    });
+    function toggleSlide(item) {
+        $(item).each(function(i) {
+            $(this).on('click', function(e) {
+                $('.catalog__content').eq(i).toggleClass('catalog__content_active');
+            })
+        });
+    }
+    toggleSlide('.catalog__link');
+    toggleSlide('.catalog__link_back');
     
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn()
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut()
+    })
+
+    $('.button_catalog').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog__subheader').eq(i).text());
+            $('.overlay, #order').fadeIn();
+        });
+    });
+
 });
 
 
