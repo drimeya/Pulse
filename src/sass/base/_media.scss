@@ -57,6 +57,12 @@
             }
         }
     }
+    .footer {
+        &__info {
+            width: 60vw;
+            height: 250px
+        }
+    }
 }
 @media screen and (max-width: 575px) {
     .header {
@@ -148,6 +154,23 @@
         &__tabs {
             flex-direction: column;
             align-items: center;
+        }
+    }
+    .footer {
+        &__addres {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        &__phone {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        &__links {
+            width: 50vw;
+        }
+        &__link {
+            width: 45px;
+            height: 45px;
         }
     }
 }
