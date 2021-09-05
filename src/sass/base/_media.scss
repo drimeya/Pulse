@@ -7,6 +7,22 @@
     .advantages__item {
         width: 210px;
     }
+    .carousel {
+        .container {
+            width: 70vw;
+        }
+        &__wpapper {     
+            img {
+                width: 70vw;
+            }
+        }
+        .slick-prev {
+            left: -15%;
+        }
+        .slick-next {
+            right: -15%;
+        }
+    }
 }
 @media screen and (max-width: 767px) {
     .header__official {
@@ -17,6 +33,27 @@
         &:last-child {
             .advantages__text {
                 margin-top: 45px;
+            }
+        }
+    }
+    .catalog__tab {
+        font-size: 15px;
+    }
+    .review {
+        .title {
+            margin-bottom: 35px;
+        }
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            img {
+                margin: 0 0 20px 0;
+            }
+        }
+        &__author {
+            text-align: center;
+            &-achiv {
+                text-align: center;
             }
         }
     }
@@ -98,5 +135,19 @@
     }
     .form {
         width: 90vw;
+    }
+    .carousel {
+        .slick-prev, .slick-next {
+            img {
+                width: 20px;
+                height: auto;
+            }
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
