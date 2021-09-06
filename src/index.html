@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -408,7 +409,7 @@
     <section class="review">
         <div class="container">
             <div class="title">отзывы клиентов</div>
-            <div class="review__item">
+            <div class="review__item animate__animated animate__bounceInUp wow"  data-wow-delay="1s" data-wow-offset="10">
                 <img src="img/reviews/photo_1.jpg" alt="">
                 <div class="review__text">
                     <div class="review__author">Ирина Иванченко </div>
@@ -416,7 +417,7 @@
                     <div class="review__descr">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности. Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же. <br> Новые цели - новый гаджет! <br> Спасибо, RunSmart!</div>
                 </div>
             </div>
-            <div class="review__item">
+            <div class="review__item animate__animated animate__bounceInUp wow" data-wow-delay="1s" data-wow-offset="10">
                 <img src="img/reviews/photo_2.jpg" alt="">
                 <div class="review__text">
                     <div class="review__author">Иван Сёмочкин</div>
@@ -424,7 +425,7 @@
                     <div class="review__descr">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд. С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
                 </div>
             </div>
-            <div class="review__item">
+            <div class="review__item animate__animated animate__bounceInUp wow" data-wow-delay="1s" data-wow-offset="10">
                 <img src="img/reviews/photo_3.jpg" alt="">
                 <div class="review_text">
                     <div class="review__author">Юлия Дашкина</div>
@@ -486,6 +487,10 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src='js/jquery.maskedinput.js'></script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <script src="js/script.js"></script>
 </body>
 </html>
