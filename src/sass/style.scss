@@ -1,6 +1,12 @@
 @import 'base/variables';
 @import 'base/mixins';
 @import 'blocks/animation';
+@import 'plugins/animate';
+@import 'plugins/bootstrap-reboot.min';
+@import 'plugins/fonts';
+@import 'plugins/slick';
+
+
 * {
     font-family: 'Museo Sans', sans-serif;
 }
